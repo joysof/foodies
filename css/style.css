@@ -27,6 +27,9 @@ body{
     cursor: pointer;
     text-transform: capitalize;
 }
+ul {
+    list-style: none;
+}
 
 /* Navbar container */
 nav {
@@ -218,4 +221,46 @@ padding: 0 60px;
  justify-content: center;
  align-items: center;
  border-radius: 10px;
+}
+
+#benefit{
+    margin: 0 60px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.be_left{
+    background-color: #f3fafb;
+}
+#benefit img{
+    width: 445px;
+    height: 513px;
+    margin: 0 50px;
+    margin-bottom: 70px;
+
+}
+#benefit h6{
+    font-weight: 500;
+    font-size: 15px;
+    
+}
+#benefit h2{
+    font-weight: 500;
+    font-size: 60px;
+
+}
+#benefit i{
+    color: #06c167;
+    margin-right: 20px ;
+    font-size: 26px;
+
+}
+
+#benefit li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+
+
 }
