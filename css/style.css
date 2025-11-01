@@ -176,11 +176,46 @@ padding: 0 60px;
     border-radius: 50%;
 }
 /*  Polkadot (bottom right) */
-.polkadot {
+/* .polkadot {
   position: absolute;
   right: 30px;
   bottom: -30px;
   width: 120px;
   opacity: 0.3;
-}
+} */
 /* end hero section  */
+
+/* service  */
+
+#service{
+    margin: 100px 0 100px 0px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#service div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#service h2{
+    text-transform: capitalize;
+    font-size: 18px;
+} 
+#service span{
+   display: block;
+    font-size: 14px;
+}
+#service i{
+  color:#06c167;
+  font-size: 30px;
+  background: #f3fcf7;
+  width: 70px;
+  height: 70px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+}
