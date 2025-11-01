@@ -188,7 +188,7 @@ padding: 0 60px;
 } */
 /* end hero section  */
 
-/* service  */
+/* service  style */
 
 #service{
     margin: 100px 0 100px 0px;
@@ -223,6 +223,7 @@ padding: 0 60px;
  border-radius: 10px;
 }
 
+/* benefit style  */
 #benefit{
     margin: 0 60px;
     display: flex;
@@ -262,5 +263,14 @@ padding: 0 60px;
     font-size: 16px;
     line-height: 35px;
 
+
+}
+
+/* store style  */
+#s img{
+    width: 445px;
+    height: 513px;
+    margin: 0 50px;
+    margin-bottom: 70px;
 
 }
