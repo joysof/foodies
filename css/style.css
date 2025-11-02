@@ -17,7 +17,7 @@ section {
   font-weight: 600;
   font-size: 75px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
@@ -73,12 +73,16 @@ nav {
 }
 
 /* Menu list */
-nav ul {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 25px;
 }
-
+.toggle-btn {
+  display: none;
+  font-size: 21.9px;
+  cursor: pointer;
+}
 /* Menu links */
 nav ul li a {
   list-style: none;
@@ -202,9 +206,9 @@ nav ul li a:hover {
 /* service  style */
 
 #service {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 #service div {
   display: flex;
@@ -315,44 +319,43 @@ nav ul li a:hover {
   padding: 0px;
 }
 .content button {
-    margin-top: 10px;
-    background-color: #e6f9f0;
-    width: 148px;
-    height: 42px;
-    color: #06c167;
-    font-size: 15px;
-    font-weight: 500;
+  margin-top: 10px;
+  background-color: #e6f9f0;
+  width: 148px;
+  height: 42px;
+  color: #06c167;
+  font-size: 15px;
+  font-weight: 500;
 }
 .content h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 .content p {
-    font-size: 16px;
-    line-height: 50px;
+  font-size: 16px;
+  line-height: 50px;
 }
 
-
 /* product style  */
-.products{
+.products {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   margin-top: 50px;
 }
-.products i{
+.products i {
   color: #06c167;
 }
-.Product_content{
+.Product_content {
   padding: 30px;
   border: 2px solid #76767540;
 }
-.Product_content p{
+.Product_content p {
   font-size: 20px;
   text-transform: capitalize;
   margin: 15px 0px;
 }
-.Product_content button{
+.Product_content button {
   text-transform: capitalize;
   background: white;
   color: #06c167;
@@ -362,19 +365,19 @@ nav ul li a:hover {
   width: 177px;
   height: 57px;
 }
-.product_price{
+.product_price {
   color: #767675;
 }
-.product_price span{
+.product_price span {
   color: #06c167;
   margin-left: 10px;
 }
-.products img{
+.products img {
   width: 190px;
   height: 190px;
   border-radius: 100%;
 }
-#try_product{
+#try_product {
   background-image: url('/images/try_bg.png');
   background-size: cover;
   background-position: center;
@@ -383,12 +386,12 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 459px;
-  color:white;
+  color: white;
   text-align: center;
   margin: auto;
   margin-top: 150px;
 }
-#try_product button{
+#try_product button {
   text-align: center;
   margin: auto;
   margin-top: 30px;
@@ -396,36 +399,34 @@ nav ul li a:hover {
 
 /* footer  */
 .footer_content {
-
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
 }
-footer li{
+footer li {
   line-height: 30px;
 }
 
-.company_detals{
+.company_detals {
   width: 284px;
 }
-.company_detals h4{
+.company_detals h4 {
   margin-bottom: 50px;
 }
-.company_detals i{
+.company_detals i {
   margin: 30px 30px;
   cursor: pointer;
 }
-.footer_title{
+.footer_title {
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
-
-.subscribe{
+.subscribe {
   width: 338px;
 }
-.subscribe input{
+.subscribe input {
   background: #f0f1ec;
   border: none;
   outline: none;
@@ -433,17 +434,17 @@ footer li{
 
   padding-left: 15px;
 }
-.subscribe button{
+.subscribe button {
   height: 50px;
 }
-.subscribe div{
+.subscribe div {
   margin-top: 20px;
   display: flex;
   gap: 10px;
   height: 50px;
 }
 
-.copyright_text{
+.copyright_text {
   text-align: center;
   margin-bottom: 50px;
   text-transform: capitalize;

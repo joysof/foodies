@@ -1,31 +1,85 @@
-/* 📱 Mobile (max-width: 600px) */
+/*  Mobile (max-width: 600px) */
 @media (max-width: 600px) {
   body {
     max-width: 100%;
     padding: 0 15px;
   }
-
+  section{
+    margin-top: 36px;
+  }
+  h2 {
+    font-size: 51px;
+  }
+  .btn {
+    width: 320px;
+  }
   nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    align-items: center;
   }
 
-  nav ul {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    transition: left 0.3s ease;
+  }
+  .nav-links.active {
+    left: 40%;
+  }
+  .toggle-btn {
+    display: block;
   }
 
+  /* hero section  */
   .hero {
     flex-direction: column;
     padding: 20px;
+    justify-content: center;
     gap: 30px;
+    margin: auto;
+    overflow: hidden;
   }
-
+  .quality{
+    position: absolute;
+    height: 53px;
+    right: 8%;
+    top: 85%;
+    font-size: 14px;
+  }
+  .quality h3{
+    font-size: 14px;
+  }
+  .hero_left_site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_left_site p {
+    width: 316px;
+  }
+  .des {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 51px;
+    padding: 0;
+  }
+  .rating {
+    left: 25%;
+    top: 80%;
+    transform: translateY(-50%);
+  }
   .hero_right_side {
     padding-right: 0;
     margin-bottom: 0;
+  }
+  .brand{
+    margin-top: 20px;
   }
 
   .baner_img {
@@ -41,10 +95,9 @@
   }
 
   #service {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    grid-template-columns: repeat(2  ,1fr);
   }
+  
 
   #benefit {
     flex-direction: column;
@@ -83,7 +136,7 @@
   }
 }
 
-/* 💻 Tablet (601px - 992px) */
+/*  Tablet (601px - 992px) */
 @media (min-width: 601px) and (max-width: 992px) {
   nav {
     padding: 15px 40px;
@@ -99,7 +152,9 @@
     width: 80%;
     height: auto;
   }
-
+  #service{
+    grid-template-columns: repeat(2,1fr);
+  }
   #benefit {
     flex-direction: column;
   }
