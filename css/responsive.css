@@ -168,11 +168,37 @@
 .stares_detals div{
  margin: 20px 0;
 }
+#features{
+  margin-top: 100px;
+  text-align: center;
+}
+#features h6{
+  margin-bottom: -30px;
+  padding: 0;
+}
+.content{
+  background-color: #f0f1ec;
+  margin: auto;
+  height: 292px;
+}
+.content h2{
+  margin: auto;
+}
+.content button{
+  background-color: #f0ede2;
+  margin: auto;
+}
 
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
-
+ 
+  
+  .container .content:nth-child(4) { order: 4; } 
+  .container .content:nth-child(5) { order: 6; } 
+  .container .content:nth-child(6) { order: 5; }
+  .container .content:nth-child(7) { order: 8; }
+  .container .content:nth-child(8) { order: 7; } 
   .products {
     flex-direction: column;
     gap: 20px;
@@ -189,6 +215,7 @@
     width: 100%;
   }
 }
+
 
 /*  Tablet (601px - 992px) */
 @media (min-width: 601px) and (max-width: 992px) {
